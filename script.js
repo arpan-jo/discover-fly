@@ -1,3 +1,4 @@
+// function for to add event
 function productNumber(id, isIncrease) {
   const ticketCount = document.getElementById(id).value;
   const ticket = parseInt(ticketCount);
@@ -12,6 +13,7 @@ function productNumber(id, isIncrease) {
   calculate();
 }
 
+// calculation for ticket price
 let firstClassTicket = document.getElementById('first-class');
 let economyClassTicket = document.getElementById('economy-class');
 
@@ -21,10 +23,13 @@ function calculate() {
   document.getElementById('vat').innerText = '$' + total * 0.1;
   document.getElementById('total').innerText = '$' + (total + total * 0.1);
 }
+
+// to show message for empty ticket
 function booking() {
   if (firstClassTicket.value === '0' && economyClassTicket.value === '0') {
-    alert('You do not buy any ticket');
+    alert('You do not buy any ticket yet.');
   } else {
+    document.getElementById('footer').style.display = 'none';
     document.getElementById('booking-section').style.display = 'none';
     document.getElementById('showMessage').style.display = 'block';
   }

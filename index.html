@@ -73,8 +73,8 @@
           </div>
           <div class="plus-minus-btn">
             <p>
-              <span onclick="productNumber('first-class', true)">+</span>
-              <span onclick="productNumber('first-class', false)">-</span>
+              <span class="sign" onclick="productNumber('first-class', true)">+</span>
+              <span class="sign" onclick="productNumber('first-class', false)">-</span>
             </p>
           </div>
         </div>
@@ -92,8 +92,8 @@
           </div>
           <div class="plus-minus-btn">
             <p>
-              <span onclick="productNumber('economy-class', true)">+</span>
-              <span onclick="productNumber('economy-class', false)">-</span>
+              <span class="sign" onclick="productNumber('economy-class', true)">+</span>
+              <span class="sign" onclick="productNumber('economy-class', false)">-</span>
             </p>
           </div>
         </div>
@@ -125,10 +125,19 @@
             </div>
           </div>
         </div>
-        <button onclick="booking()" class="btn-style">Book Now</button>
+        <button onclick="booking()" class="btn-style book-button">Book Now</button>
       </div>
-      <div id="showMessage"><p>Thank you for booking.</p></div>
-      <div class="booking-content booked">
+      <div id="showMessage">
+        <p class="ticket">
+          Your ticket is
+          <span class="ticket">
+            booked.</span>
+            <hr />
+            <br /> <span class="ticket1"> Thank you
+          </span>
+        </p>
+      </div>
+      <div id="footer" class="booking-content">
         <h1>
           discover <br />
           around the world

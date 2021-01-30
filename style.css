@@ -121,15 +121,26 @@ a.active {
   display: flex;
   justify-content: space-between;
 }
-span:hover {
+.sign:hover {
   color: red;
-  font-size: larger;
+  font-size: 50px;
 }
 #showMessage {
   text-align: center;
-  text-decoration: double;
+  text-decoration: wavy;
   display: none;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 50px;
+  color: white;
+}
+.ticket {
+  color: gold;
+}
+.ticket1 {
+  font-style: italic;
+  color: chartreuse;
+}
+.book-button:hover {
   color: red;
+  font-weight: 800;
 }
