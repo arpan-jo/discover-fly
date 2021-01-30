@@ -26,10 +26,10 @@ function calculate() {
 // to show box message for empty ticket buy
 function booking() {
   if (firstClassTicket.value === '0' && economyClassTicket.value === '0') {
-    alert('You do not buy any ticket yet.');
+    document.getElementById('empty-ticket').style.display = 'block';
+    display();
   } else {
-    document.getElementById('footer').style.display = 'none';
-    document.getElementById('booking-section').style.display = 'none';
+    display();
     document.getElementById('showMessage').style.display = 'block';
     const ticketFirstclass = firstClassTicket.value;
     const ticketFirst = parseInt(ticketFirstclass);
@@ -38,4 +38,10 @@ function booking() {
     const ticketNumbers = ticketFirst + ticketEconomy;
     document.getElementById('ticketNumber').innerText = ticketNumbers;
   }
+}
+
+// for display block
+function display() {
+  document.getElementById('footer').style.display = 'none';
+  document.getElementById('booking-section').style.display = 'none';
 }
