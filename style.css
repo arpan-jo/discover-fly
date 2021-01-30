@@ -129,13 +129,15 @@ a.active {
   text-align: center;
   text-decoration: wavy;
   display: none;
-  font-weight: 400;
-  font-size: 50px;
+  font-weight: 700;
+  font-size: 40px;
   color: white;
-  margin-top: 80px;
+  border: 3px dotted gainsboro;
+  border-radius: 20px;
+  margin: 170px 100px 0px 100px;
 }
 .ticket {
-  color: gold;
+  color: tomato;
 }
 .ticket1 {
   font-style: italic;
