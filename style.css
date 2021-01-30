@@ -132,6 +132,7 @@ a.active {
   font-weight: 400;
   font-size: 50px;
   color: white;
+  margin-top: 80px;
 }
 .ticket {
   color: gold;
